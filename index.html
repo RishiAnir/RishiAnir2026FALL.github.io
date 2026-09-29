@@ -94,8 +94,23 @@
     }
 
     .hero {
-      padding: 90px 0 75px;
-      max-width: 850px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: center;
+      gap: 60px;
+      padding: 85px 0 75px;
+    }
+
+    .headshot {
+      display: block;
+      width: 260px;
+      height: 310px;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--light);
     }
 
     .eyebrow {
@@ -114,16 +129,15 @@
     h1 {
       margin-bottom: 24px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(52px, 8vw, 88px);
+      font-size: clamp(52px, 7vw, 80px);
       font-weight: normal;
       line-height: 1.1;
       letter-spacing: -3px;
     }
 
     .statement {
-      max-width: 800px;
       color: var(--muted);
-      font-size: clamp(19px, 2.5vw, 24px);
+      font-size: 21px;
       line-height: 1.65;
     }
 
@@ -180,7 +194,7 @@
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
     }
 
@@ -208,7 +222,7 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 24px;
     }
 
@@ -325,6 +339,16 @@
     }
 
     @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr) 200px;
+        gap: 30px;
+      }
+
+      .headshot {
+        width: 200px;
+        height: 250px;
+      }
+
       .skills-grid {
         grid-template-columns: 1fr;
       }
@@ -352,11 +376,23 @@
       }
 
       .hero {
-        padding: 55px 0;
+        grid-template-columns: 1fr;
+        padding: 45px 0;
+        gap: 30px;
+      }
+
+      .headshot {
+        grid-row: 1;
+        width: 180px;
+        height: 210px;
       }
 
       h1 {
         letter-spacing: -2px;
+      }
+
+      .statement {
+        font-size: 19px;
       }
 
       h2 {
@@ -381,6 +417,7 @@
       }
 
       .contact-links {
+        max-width: 100%;
         overflow-wrap: anywhere;
       }
 
@@ -416,22 +453,32 @@
   <main id="main" class="container">
 
     <div class="hero">
-      <p class="eyebrow">Supply Chain · Analytics · Operations</p>
+      <div>
+        <p class="eyebrow">Supply Chain · Analytics · Operations</p>
 
-      <h1>Hi, I'm Rishi.</h1>
+        <h1>Hi, I'm Rishi.</h1>
 
-      <p class="statement">
-        I’m Rishi Aniraj, a Rutgers Business School supply chain
-        management student who uses data analysis and hands-on
-        operations experience to identify opportunities for
-        process improvement.
-      </p>
+        <p class="statement">
+          I’m Rishi Aniraj, a Rutgers Business School supply chain
+          management student who uses data analysis and hands-on
+          operations experience to identify opportunities for
+          process improvement.
+        </p>
 
-      <p class="hero-details">
-        B.S. in Supply Chain Management · Expected 2028
-      </p>
+        <p class="hero-details">
+          B.S. in Supply Chain Management · Expected 2028
+        </p>
 
-      <a class="button" href="#projects">Explore my projects ↓</a>
+        <a class="button" href="#projects">Explore my projects ↓</a>
+      </div>
+
+      <img
+        class="headshot"
+        src="betterheadshot.jpg"
+        alt="Portrait of Rishi Aniraj"
+        width="260"
+        height="310"
+      >
     </div>
 
     <section id="skills" aria-labelledby="skills-heading">
