@@ -1,45 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rishi Aniraj — Rutgers supply chain management student with experience in operations, logistics, and data analytics.">
-  <meta name="theme-color" content="#163e3b">
-  <title>Rishi Aniraj | Supply Chain & Analytics</title>
+  <meta name="description" content="Rishi Aniraj's portfolio: supply chain management, data analytics, and process improvement.">
+  <title>Rishi Aniraj | Personal Portfolio</title>
+
   <style>
-    :root{--ink:#172d2b;--muted:#52635e;--green:#163e3b;--paper:#fafaf7;--line:#dce2dc;--tint:#edf1eb}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}a{color:inherit;text-underline-offset:5px}a:hover{color:#39766b}a:focus-visible{outline:3px solid #bc7b32;outline-offset:6px}::selection{background:#d5e4db}.wrap{width:min(1120px,calc(100% - 64px));margin:auto}.skip{position:absolute;top:-70px;background:white;padding:10px;z-index:10}.skip:focus{top:5px}
-    header{background:var(--paper);border-bottom:1px solid var(--line)}nav{min-height:88px;display:flex;justify-content:space-between;align-items:center;gap:25px}.brand{text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.5px}.brand span{display:inline-grid;place-items:center;border:1px solid #a6b8ad;width:38px;height:38px;margin-right:12px;font-size:13px;letter-spacing:0}.navlinks{display:flex;gap:28px;align-items:center;font-size:13px}.navlinks a{text-decoration:none}.navlinks a:last-child{border-bottom:1px solid var(--green);padding-bottom:3px}
-    .hero{padding:95px 0 83px;display:grid;grid-template-columns:1.45fr 1fr;gap:85px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;color:var(--muted);margin:0 0 22px}.eyebrow::before{content:"";display:inline-block;width:22px;height:2px;background:#799584;vertical-align:middle;margin-right:10px}h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(52px,6.2vw,80px);letter-spacing:-3px;line-height:1.06;margin-bottom:26px}h1 span{display:block;color:#537369}h2{font-family:Georgia,serif;font-size:38px;font-weight:400;letter-spacing:-1px;line-height:1.2}h3{font-size:20px;line-height:1.4;letter-spacing:-.4px;margin-bottom:12px}.intro{font-size:18px;max-width:550px;color:var(--muted)}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;justify-content:center;align-items:center;gap:24px;background:var(--green);color:white;text-decoration:none;padding:13px 20px;font-size:13px;border:1px solid var(--green)}.button:hover{background:#28554e;color:white}.button.secondary{background:transparent;color:var(--ink);border-color:#bdc9bf}.button.secondary:hover{background:var(--tint)}
-    .profile{background:var(--tint);padding:36px;border-top:3px solid var(--green)}.profile .monogram{font:76px Georgia,serif;letter-spacing:-5px;color:#718b7b;margin:15px 0 32px}.profile h3{font:25px Georgia,serif;margin-bottom:5px}.profile p{color:var(--muted);font-size:14px}.facts{border-top:1px solid #cbd6cb;margin-top:26px;padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.facts strong{display:block;font-size:25px;font-weight:400;color:var(--green)}.facts span{font-size:11px;text-transform:uppercase;letter-spacing:1px}
-    .section{border-top:1px solid var(--line);padding:70px 0}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:30px}.section-head p{color:var(--muted);max-width:490px}.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.6px;margin-bottom:13px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:white;border:1px solid var(--line);padding:32px;display:flex;flex-direction:column}.card p{color:var(--muted);font-size:15px}.card .number{font:36px Georgia,serif;color:#869b8b;margin-bottom:28px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:15px}.tags span{font-size:11px;padding:5px 9px;background:var(--tint);color:#38584a}.result{border-left:2px solid #769584;padding-left:15px;margin:8px 0 20px;font-size:14px}.result strong{display:block;font-size:17px}.experience{display:grid;grid-template-columns:270px 1fr;gap:55px}.job{display:grid;grid-template-columns:1fr 160px;gap:12px 30px;padding:0 0 30px;margin-bottom:30px;border-bottom:1px solid var(--line)}.job:last-child{border:0;margin:0;padding-bottom:0}.job h3{margin-bottom:3px}.job .role{color:#537369;font-size:14px;margin-bottom:15px}.date{font-size:12px;color:var(--muted);text-align:right;padding-top:6px}.job ul{grid-column:1/-1;padding-left:18px;margin:0;color:var(--muted);font-size:15px}.job li+li{margin-top:8px}.education{display:grid;grid-template-columns:1fr 1fr;gap:55px}.school+.school{margin-top:30px;padding-top:25px;border-top:1px solid var(--line)}.school p{font-size:14px;color:var(--muted);margin-bottom:8px}.skill-list{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:28px}.skill-list span{border:1px solid #cdd8ce;padding:7px 12px;font-size:13px}.credentials{padding-left:18px;color:var(--muted);font-size:14px}.credentials li{margin-bottom:8px}.personal{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px;margin-top:25px}.contact{background:var(--green);color:#fff;padding:55px;display:flex;align-items:center;justify-content:space-between;gap:45px;margin-bottom:65px}.contact h2{margin-bottom:15px;font-size:42px}.contact p{color:#d1ded5;max-width:540px;margin-bottom:0}.contact .label{color:#c6d7cb}.contact-links{display:flex;flex-direction:column;gap:12px;flex-shrink:0;font-size:14px}.contact a:hover{color:#c9e7d4}footer{border-top:1px solid var(--line);padding:25px 0;font-size:12px;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:850px){.hero{gap:35px;padding:65px 0}.experience{grid-template-columns:1fr;gap:15px}.contact{padding:35px;align-items:flex-start;flex-direction:column}.navlinks{gap:17px}.hero h1{font-size:58px}.profile{padding:26px}}
-    @media(max-width:600px){.wrap{width:calc(100% - 36px)}nav{align-items:flex-start;flex-direction:column;gap:15px;padding:19px 0}.navlinks{width:100%;justify-content:space-between;gap:10px;font-size:12px}.hero{grid-template-columns:1fr;padding:48px 0;gap:35px}h1{font-size:57px!important}.intro{font-size:17px}.profile .monogram{display:none}.profile{padding:25px}.section{padding:45px 0}.section-head,.cards,.education{grid-template-columns:1fr;gap:20px}.section-head{margin-bottom:15px}h2{font-size:32px}.card{padding:25px}.job{grid-template-columns:1fr;gap:0}.date{text-align:left;margin-bottom:16px;padding:0}.job .role{margin-bottom:5px}.contact{padding:28px;margin-bottom:40px}.contact h2{font-size:34px}.contact-links{font-size:13px;overflow-wrap:anywhere}footer .wrap{flex-direction:column;gap:5px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-    @media print{header,.actions,.contact,footer{display:none}.hero,.section{padding:25px 0}.wrap{width:100%}.card,.job,.school{break-inside:avoid}body{background:white}.hero{gap:30px}h1{font-size:48px}}
+    :root {
+      --background: #fafaf7;
+      --white: #ffffff;
+      --ink: #183d36;
+      --muted: #56665f;
+      --accent: #426c5a;
+      --light: #edf2ec;
+      --border: #dce3db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 5px;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #a77734;
+      outline-offset: 5px;
+    }
+
+    .container {
+      width: min(1080px, calc(100% - 48px));
+      margin: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      padding: 10px;
+      background: white;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 90px 0 75px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 8vw, 88px);
+      font-weight: normal;
+      line-height: 1.1;
+      letter-spacing: -3px;
+    }
+
+    .statement {
+      max-width: 800px;
+      color: var(--muted);
+      font-size: clamp(19px, 2.5vw, 24px);
+      line-height: 1.65;
+    }
+
+    .hero-details {
+      margin: 25px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 22px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    section {
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 38px;
+      font-weight: normal;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .section-intro {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: var(--muted);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .skill-card {
+      padding: 26px;
+      border: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .skill-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .skill-card li {
+      margin-bottom: 7px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      border: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .project-number {
+      margin-bottom: 24px;
+      color: #829783;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    .project-type {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .project h3 {
+      font-size: 23px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .project-result {
+      margin: 8px 0 24px;
+      padding-left: 16px;
+      border-left: 3px solid #8da38e;
+    }
+
+    .project-result strong {
+      display: block;
+      color: var(--ink);
+      font-size: 17px;
+    }
+
+    .project-result span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .tags span {
+      padding: 5px 10px;
+      background: var(--light);
+      color: var(--ink);
+      font-size: 11px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 35px;
+      margin: 20px 0 60px;
+      padding: 42px;
+      border: 0;
+      background: var(--ink);
+      color: white;
+    }
+
+    .contact h2 {
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      max-width: 550px;
+      margin-bottom: 0;
+      color: #d7e3d9;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+
+    .contact a:hover {
+      color: #d7e3d9;
+    }
+
+    footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    @media (max-width: 800px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: calc(100% - 36px);
+      }
+
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        gap: 24px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      section {
+        padding: 42px 0;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project {
+        padding: 25px;
+      }
+
+      .contact {
+        margin-bottom: 40px;
+        padding: 28px;
+      }
+
+      .contact-links {
+        overflow-wrap: anywhere;
+      }
+
+      footer .container {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
+
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#main"><span aria-hidden="true">RA</span>Rishi Aniraj</a><div class="navlinks"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Let's connect ↗</a></div></nav></header>
-<main id="main" class="wrap">
-  <section class="hero" aria-labelledby="intro-title">
-    <div><p class="eyebrow">Supply chain · Analytics · Operations</p><h1 id="intro-title">A practical eye.<span>An analytical mind.</span></h1><p class="intro">I'm Rishi, a Supply Chain Management student at Rutgers Business School. From shipping counters to case competitions, I explore how data can help operations work better.</p><div class="actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button secondary" href="Rishi_Aniraj_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a></div></div>
-    <aside class="profile" aria-label="Academic profile"><p class="label">Currently at Rutgers Business School</p><div class="monogram" aria-hidden="true">RA.</div><h3>Learning the system.<br>Looking for the improvement.</h3><p>Building experience across supply chain operations, procurement, and data analysis.</p><div class="facts"><div><strong>3.75 <small style="font-size:13px">/ 4.00</small></strong><span>Cumulative GPA</span></div><div><strong>2028</strong><span>Expected graduation</span></div></div></aside>
-  </section>
-  <section id="work" class="section" aria-labelledby="work-title"><div class="section-head"><div><p class="label">01 / Selected work</p><h2 id="work-title">Putting analysis into practice.</h2></div><p>Two experiences that connect my interest in data with the everyday challenges of running a business.</p></div>
-    <!-- Add future project cards here. Link to reports or dashboards only when those files are available. -->
-    <div class="cards"><article class="card"><span class="number" aria-hidden="true">01</span><p class="label">Operations analysis / The UPS Store</p><h3>Finding the friction in shipping workflows.</h3><p>I analyzed three months of shipment and return data using Excel and Power BI to identify processing delays and workflow bottlenecks. Working at the counter also gave me a practical view of the processes behind the data.</p><div class="result"><strong>3 months of operational data</strong>Analyzed alongside experience serving 40+ customers per shift.</div><div class="tags"><span>Excel</span><span>Power BI</span><span>Process improvement</span></div></article>
-    <article class="card"><span class="number" aria-hidden="true">02</span><p class="label">Case competition / Team leader / Apr. 2025</p><h3>Building a case for reducing product loss.</h3><p>I led an ALDI case competition study that identified 15% product loss and a 44% repeat-offender rate within the case. Our team developed countermeasures and presented them to judges acting as company stakeholders.</p><div class="result"><strong>Up to 30% projected reduction in theft</strong>A case-based estimate from the proposed countermeasures.</div><div class="tags"><span>Team leadership</span><span>Problem solving</span><span>Business presentations</span></div></article></div>
-  </section>
-  <section id="experience" class="section experience" aria-labelledby="experience-title"><div><p class="label">02 / Experience</p><h2 id="experience-title">Grounded in<br>real operations.</h2><p style="color:var(--muted);font-size:15px">Customer-facing work, industry exposure, and a growing perspective on logistics.</p></div><div>
-    <article class="job"><div><h3>Playa Bowls</h3><p class="role">Team Member · Plainsboro, NJ</p></div><div class="date">May 2026 – Present</div><ul><li>Prepare made-to-order items across a 20+ item menu while maintaining order accuracy during busy lunch and weekend rushes.</li><li>Handle register transactions, opening and closing tasks, and FIFO-based restocking to maintain freshness and minimize waste.</li></ul></article>
-    <article class="job"><div><h3>The UPS Store</h3><p class="role">Store Associate · Plainsboro, NJ</p></div><div class="date">Aug. – Nov. 2025</div><ul><li>Coordinated shipping, packaging, and returns for 40+ customers per shift while following UPS standards.</li><li>Used Excel and Power BI to investigate shipment and return workflows.</li></ul></article>
-    <article class="job"><div><h3>Bristol Myers Squibb</h3><p class="role">Supply Chain Externship · One-day program</p></div><div class="date">Jun. 2026</div><ul><li>Explored manufacturing, supply chain, and procurement in the biopharmaceutical industry, including sustainable sourcing and the Global Procurement Pillars.</li><li>Presented in a Lightning Round before company leaders and fellow externs, connecting a personal experience to adaptability and objective problem solving.</li></ul></article>
-    <article class="job"><div><h3>Traffic Club of New York</h3><p class="role">Mentorship Program</p></div><div class="date">May 2026</div><ul><li>Selected as one of two Supply Chain Management students at Rutgers Newark for a competitive mentorship program.</li><li>Connected with a senior manager at MEDLOG for guidance on supply chain careers and the transition from operations into logistics.</li></ul></article>
-  </div></section>
-  <section id="education" class="section" aria-labelledby="education-title"><p class="label">03 / Foundation</p><div class="education"><div><h2 id="education-title">Education &amp; involvement.</h2><article class="school"><h3>Rutgers Business School</h3><p>B.S. in Supply Chain Management<br>Sep. 2025 – Apr. 2028 · Expected graduation</p><p><strong>3.75/4.00 GPA · Dean's List</strong><br>Newark Chancellor 2K Scholarship</p><p>Coursework: Global Procurement Sourcing Strategies, Supply Chain, Statistics</p><p>Organizations: BASE, ASCM</p></article><article class="school"><h3>Indiana University Bloomington</h3><p>Supply Chain Management studies<br>Aug. 2024 – May 2025 · Dean's List</p><p>Coursework: Excel &amp; Power BI, Business Presentations, Economics<br>Organization: SCOMA</p></article></div><div><h2>Tools &amp; capabilities.</h2><div class="skill-list"><span>Microsoft Excel</span><span>Power BI</span><span>Tableau</span><span>Data analytics</span><span>Data visualization</span><span>Process improvement</span><span>Supply chain operations</span><span>Logistics</span><span>Canva</span></div><p class="label">Certifications &amp; training</p><ul class="credentials"><li>Lean Six Sigma White Belt <br><small>Green Belt in progress</small></li><li>Tableau Essential Training</li><li>Rutgers Excel Advanced and Advanced Procurement Certifications</li><li>SAP Training <small>· In progress</small></li></ul><p class="personal"><strong>Beyond the classroom</strong><br>I enjoy vibe coding, creating content, lifting, bouldering, and reading.</p></div></div></section>
-  <section id="contact" class="contact" aria-labelledby="contact-title"><div><p class="label">04 / Get in touch</p><h2 id="contact-title">Let's connect.</h2><p>I'm interested in conversations about supply chain, analytics, and opportunities to learn through hands-on work.</p></div><div class="contact-links"><a href="mailto:Rishi.Aniraj@gmail.com">Rishi.Aniraj@gmail.com ↗</a><a href="https://www.linkedin.com/in/rishianiraj" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a href="Rishi_Aniraj_Resume.pdf" download>Download my résumé ↓</a></div></section>
-</main><footer><div class="wrap"><span>© 2026 Rishi Aniraj</span><span>Supply chain. Data. Continuous improvement.</span></div></footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#main">Rishi Aniraj</a>
+
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+
+    <div class="hero">
+      <p class="eyebrow">Supply Chain · Analytics · Operations</p>
+
+      <h1>Hi, I'm Rishi.</h1>
+
+      <p class="statement">
+        I’m Rishi Aniraj, a Rutgers Business School supply chain
+        management student who uses data analysis and hands-on
+        operations experience to identify opportunities for
+        process improvement.
+      </p>
+
+      <p class="hero-details">
+        B.S. in Supply Chain Management · Expected 2028
+      </p>
+
+      <a class="button" href="#projects">Explore my projects ↓</a>
+    </div>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <p class="section-label">01 / Skills</p>
+      <h2 id="skills-heading">What I bring to the table.</h2>
+
+      <p class="section-intro">
+        My skills connect analytical tools with an understanding
+        of everyday business operations.
+      </p>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Data &amp; analytics</h3>
+          <ul>
+            <li>Microsoft Excel</li>
+            <li>Power BI</li>
+            <li>Tableau</li>
+            <li>Data analysis and visualization</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Supply chain &amp; operations</h3>
+          <ul>
+            <li>Supply chain operations</li>
+            <li>Shipping and logistics</li>
+            <li>Process improvement</li>
+            <li>FIFO inventory practices</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Communication &amp; teamwork</h3>
+          <ul>
+            <li>Team leadership</li>
+            <li>Business presentations</li>
+            <li>Customer service</li>
+            <li>Collaborative problem solving</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <p class="section-label">02 / Projects</p>
+      <h2 id="projects-heading">Analysis with a practical purpose.</h2>
+
+      <p class="section-intro">
+        Selected projects that show how I approach operational
+        challenges through data, teamwork, and clear recommendations.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project">
+          <div class="project-number" aria-hidden="true">01</div>
+
+          <p class="project-type">
+            Workplace analysis · The UPS Store
+          </p>
+
+          <h3>Shipment &amp; Return Workflow Analysis</h3>
+
+          <p>
+            While working as a Store Associate at The UPS Store,
+            I analyzed three months of shipment and return data
+            using Excel and Power BI to identify processing delays
+            and workflow bottlenecks.
+          </p>
+
+          <p>
+            My experience coordinating shipping, packaging, and
+            returns for more than 40 customers per shift helped
+            me connect the data to day-to-day operations.
+          </p>
+
+          <div class="project-result">
+            <strong>Three months of operational data</strong>
+            <span>
+              Examined to identify delays and workflow bottlenecks.
+            </span>
+          </div>
+
+          <div class="tags">
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>Process Analysis</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-number" aria-hidden="true">02</div>
+
+          <p class="project-type">
+            ALDI case competition · Team leader · April 2025
+          </p>
+
+          <h3>Product Loss Reduction Strategy</h3>
+
+          <p>
+            I led a team study of product loss in an ALDI case
+            competition. Our analysis found a 15% product-loss
+            rate and a 44% repeat-offender rate within the case.
+          </p>
+
+          <p>
+            We developed countermeasures and presented our
+            recommendations to a panel of judges acting as
+            company stakeholders.
+          </p>
+
+          <div class="project-result">
+            <strong>Up to 30% projected reduction in theft</strong>
+            <span>
+              An estimate from our proposed strategy, not an
+              implemented business result.
+            </span>
+          </div>
+
+          <div class="tags">
+            <span>Team Leadership</span>
+            <span>Problem Solving</span>
+            <span>Presentation</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div>
+        <h2 id="contact-heading">Let's connect.</h2>
+        <p>
+          I’m interested in supply chain, analytics, and
+          opportunities to learn through hands-on work.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:Rishi.Aniraj@gmail.com">
+          Rishi.Aniraj@gmail.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rishianiraj"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Rishi Aniraj</span>
+      <span>Supply chain. Data. Continuous improvement.</span>
+    </div>
+  </footer>
 </body>
 </html>
